@@ -4,31 +4,35 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/ivCar"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="#ffffff"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/tb_icon_more_cart_56"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:id="@+id/imageView" />
+        android:layout_alignParentRight="true"/>
 
     <ImageView
-        android:background="@drawable/tb"
-        android:layout_width="114dp"
-        android:layout_height="95dp"
-        android:layout_below="@+id/imageView"
+        android:id="@+id/ivIcon"
+        android:layout_width="118dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="115dp" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp" />
 
     <Button
+        android:id="@+id/btnAddCar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:text="加入到购物车"
         android:textColor="#ffffff"
         android:background="#ff5959"
         android:layout_alignParentBottom="true"/>
+
+    <com.lhh.aea.emanate.view.EmanateTaobaoView
+        android:id="@+id/emanateTaobaoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
